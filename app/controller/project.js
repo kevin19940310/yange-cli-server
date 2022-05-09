@@ -6,7 +6,7 @@ const momgo = require('../utils/mongo');
 class ProjectController extends Controller {
   async getTemplate() {
     const { ctx } = this;
-    const data = await momgo().query('project');
+    const data = await momgo().query('template');
     ctx.body = data;
   }
 }
